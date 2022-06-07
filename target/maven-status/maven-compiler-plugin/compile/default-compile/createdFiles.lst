@@ -1,0 +1,4 @@
+us\icarenow\cnsas\controller\AssuranceController.class
+us\icarenow\cnsas\model\AssuranceStatus.class
+us\icarenow\cnsas\model\dto\AssuranceResponse.class
+us\icarenow\ApplicationCnsas.class
