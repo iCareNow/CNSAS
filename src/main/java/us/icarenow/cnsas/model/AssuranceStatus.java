@@ -3,7 +3,7 @@ package us.icarenow.cnsas.model;
 import java.util.Arrays;
 
 public enum AssuranceStatus {
-    ASSURED("12895665", "assured"),
+    ASSURED("1890511125802", "assured"),
     NOT_ASSURED("40364512464", "not_assured"),
     NOT_FOUND("404576513265", "not_found");
 

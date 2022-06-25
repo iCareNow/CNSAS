@@ -5,7 +5,7 @@ import us.icarenow.cnsas.model.AssuranceStatus;
 import us.icarenow.cnsas.model.dto.AssuranceResponse;
 
 @RestController
-@RequestMapping("/patients")
+@RequestMapping("/insurances")
 public class AssuranceController {
 
     @GetMapping("/{cnp}")
