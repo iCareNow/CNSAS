@@ -51,3 +51,5 @@ Thumbs.db
 # Random
 
 *.iml
+/target/
+/.idea/
