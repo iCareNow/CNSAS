@@ -53,3 +53,5 @@ Thumbs.db
 *.iml
 /target/
 /.idea/
+/target/classes/
+/target/maven-status/
