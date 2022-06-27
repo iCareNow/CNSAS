@@ -8,7 +8,9 @@ public enum AssuranceStatus {
     NOT_FOUND("404576513265", "not_found");
 
     private String cnp;
+
     private String status;
+
 
     AssuranceStatus(String cnp, String status){
         this.cnp = cnp;
@@ -16,10 +18,13 @@ public enum AssuranceStatus {
     }
 
     public static AssuranceStatus byCNP(String cnpProvided) {
-        return Arrays.stream(values())
-                .filter(as -> as.cnp.equals(cnpProvided))
-                .findFirst()
-                .orElse(NOT_FOUND);
+        String cnpPrefixAssured="187";
+        String cnpPrefixNotAssured="195";
+        if (cnpProvided.startsWith(cnpPrefixAssured)) {
+           return ASSURED;
+        }else   if (cnpProvided.startsWith(cnpPrefixNotAssured)){
+            return NOT_ASSURED;
+        } else return NOT_FOUND;
     }
 
     public String getStatus() {
