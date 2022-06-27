@@ -51,7 +51,6 @@ Thumbs.db
 # Random
 
 *.iml
-/target/
-/.idea/
-/target/classes/
-/target/maven-status/
+target/**
+.idea/**
+
