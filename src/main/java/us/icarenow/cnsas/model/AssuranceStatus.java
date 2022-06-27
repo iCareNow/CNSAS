@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public enum AssuranceStatus {
     ASSURED("1890511125802", "assured"),
-    NOT_ASSURED("40364512464", "not_assured"),
-    NOT_FOUND("404576513265", "not_found");
+    NOT_ASSURED("2910511125802", "not_assured"),
+    NOT_FOUND("4890511125802", "not_found");
 
     private String cnp;
 
@@ -19,7 +19,7 @@ public enum AssuranceStatus {
 
     public static AssuranceStatus byCNP(String cnpProvided) {
         String cnpPrefixAssured="187";
-        String cnpPrefixNotAssured="195";
+        String cnpPrefixNotAssured="295";
         if (cnpProvided.startsWith(cnpPrefixAssured)) {
            return ASSURED;
         }else   if (cnpProvided.startsWith(cnpPrefixNotAssured)){
